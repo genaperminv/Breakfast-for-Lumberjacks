@@ -28,7 +28,13 @@ namespace Breakfast_for_Lumberjacks
 
         public void EatFlapjack()
         {
-
+            Console.WriteLine(name + "'s eating flapjacks" + 
+                Environment.NewLine);
+            foreach (Flapjack food in meal)
+            {
+                Console.WriteLine(name + " ate a " + food +
+                    " flapjack" + Environment.NewLine);
+            }
         }
     }
 }
